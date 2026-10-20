@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f8fb" />
+  <meta name="description" content="Mathematischer Konzentrationsrechner für allgemeine Laborberechnungen." />
+  <link rel="icon" type="image/svg+xml" href="./assets/snow-mark.svg" />
+  <title>Rekonstitutions-Rechner — Snow Peptides</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./header.css" />
+  <link rel="stylesheet" href="./features.css" />
+  <link rel="stylesheet" href="./shop-completion.css?v=20261020-footer" />
+</head>
+<body class="calculator-document">
+  <div class="announcement"><span class="announcement-dot"></span> Snow Peptides <span class="announcement-sep">·</span> Rechner</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="./index.html#top" aria-label="Snow Peptides Startseite"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M18 3 32 27H4L18 3Z"/><path d="m18 13 8 14H10l8-14Z"/></svg></span><span>snow<span class="brand-light">peptides</span></span></a>
+    <nav class="main-nav" aria-label="Hauptnavigation"><a href="./sortiment.html">Sortiment</a><a href="./index.html#qualitaet">Qualität</a><a href="./index.html#wissen">Über uns</a><a href="./faq.html">FAQ</a><a href="./index.html#kontakt">Kontakt</a></nav>
+    <div class="header-actions"><button class="search-trigger" type="button" aria-label="Suche öffnen" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button><button class="login-trigger" type="button">Login</button><button class="menu-trigger" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button></div>
+  </header>
+  <main class="calculator-page section-shell" id="rechner">
+    <div class="eyebrow"><span class="eyebrow-line"></span> TOOL · MATHEMATISCHE UMRECHNUNG</div>
+    <h1>Rekonstitutions-<wbr><span>Rechner.</span></h1>
+    <p class="calculator-intro">Berechnet eine allgemeine Konzentration aus Stoffmenge und Flüssigkeitsvolumen. Keine Dosierungs- oder Anwendungsempfehlung.</p>
+
+    <aside class="calculator-notice" aria-label="Wichtiger Hinweis"><span class="calculator-notice-icon" aria-hidden="true">!</span><div><h2>Wichtiger Hinweis</h2><p>Dieses Werkzeug führt ausschließlich mathematische Konzentrationsumrechnungen durch. Es berechnet keine Dosis, Spritzen-Einheiten, Pen-Klicks oder Sprühstöße und ersetzt keine fachliche Beratung. Nicht zur Vorbereitung oder Anwendung von Stoffen am Menschen oder Tier verwenden.</p></div></aside>
+
+    <div class="calculator-layout">
+      <form class="calculator-card" id="concentration-form" novalidate>
+        <div class="calculator-card-heading"><span class="eyebrow"><span class="eyebrow-line"></span> LABORWERKZEUG</span><button class="calculator-reset" type="reset">Zurücksetzen</button></div>
+        <label class="calculator-field calculator-label-field" for="sample-product"><span>Produkt <small>optional · ohne hinterlegte Vorgaben</small></span><select id="sample-product" name="product"><option value="">Kein Produkt, frei rechnen</option><option>GHK-Cu</option><option>KPV</option><option>BPC-157</option><option>Thymosin β4 (TB-500)</option><option>CJC-1295</option><option>Ipamorelin</option><option>MOTS-c</option><option>Semax</option><option>Selank</option><option>Epitalon</option><option>AOD-9604</option><option>Kisspeptin-10</option><option>Probenröhrchen Set</option><option>Kryo-Etiketten</option><option value="custom">Andere Bezeichnung</option></select><input id="sample-label" name="label" type="text" maxlength="60" placeholder="Eigene Bezeichnung" autocomplete="off" hidden></label>
+        <section class="calculator-step" data-calculator-step="amount"><div class="calculator-step-heading"><span class="calculator-step-number">1</span><div><h2>Menge im Vial</h2><p>Stoffmenge als Laborwert erfassen.</p></div><span class="calculator-step-state" aria-hidden="true">○</span></div><div class="calculator-field"><label for="material-amount">Stoffmenge</label><span class="calculator-input-row"><input id="material-amount" name="amount" type="number" min="0" step="any" inputmode="decimal" placeholder="Wert eingeben" autocomplete="off"><select id="amount-unit" name="unit" aria-label="Einheit der Stoffmenge"><option value="mg">mg</option><option value="ug">µg</option><option value="iu">IU</option><option value="g">g</option></select></span><div class="calculator-unit-choices" aria-label="Einheit auswählen"><button type="button" data-unit-for="amount-unit" data-unit="mg" class="is-active">mg</button><button type="button" data-unit-for="amount-unit" data-unit="ug">µg</button><button type="button" data-unit-for="amount-unit" data-unit="iu">IU</button></div><small class="calculator-field-note">IU werden separat in IU/mL berechnet.</small><div class="calculator-quick-values" aria-label="Schnellwahl Stoffmenge"><button type="button" data-quick-for="material-amount" data-value="2">2 mg</button><button type="button" data-quick-for="material-amount" data-value="5">5 mg</button><button type="button" data-quick-for="material-amount" data-value="10">10 mg</button><button type="button" data-quick-for="material-amount" data-value="15">15 mg</button><button type="button" data-quick-for="material-amount" data-value="20">20 mg</button><button type="button" data-quick-for="material-amount" data-value="30">30 mg</button><button type="button" data-quick-for="material-amount" data-value="50">50 mg</button><button type="button" class="quick-other" data-quick-for="material-amount" data-value="other">Andere</button></div></div></section>
+        <section class="calculator-step" data-calculator-step="volume"><div class="calculator-step-heading"><span class="calculator-step-number">2</span><div><h2>Flüssigkeitsvolumen</h2><p>Gesamtvolumen der Lösung erfassen.</p></div><span class="calculator-step-state" aria-hidden="true">○</span></div><div class="calculator-field"><label for="liquid-volume">Flüssigkeitsvolumen</label><span class="calculator-input-row"><input id="liquid-volume" name="volume" type="number" min="0" step="any" inputmode="decimal" placeholder="Wert eingeben" autocomplete="off"><select id="volume-unit" name="volumeUnit" aria-label="Einheit des Flüssigkeitsvolumens"><option value="ml">mL</option><option value="ul">µL</option><option value="l">L</option></select></span><div class="calculator-unit-choices" aria-label="Volumeneinheit auswählen"><button type="button" data-unit-for="volume-unit" data-unit="ml" class="is-active">mL</button><button type="button" data-unit-for="volume-unit" data-unit="ul">µL</button><button type="button" data-unit-for="volume-unit" data-unit="l">L</button></div><div class="calculator-quick-values" aria-label="Schnellwahl Flüssigkeitsvolumen"><button type="button" data-quick-for="liquid-volume" data-value="0.5">0,5 mL</button><button type="button" data-quick-for="liquid-volume" data-value="1">1 mL</button><button type="button" data-quick-for="liquid-volume" data-value="1.5">1,5 mL</button><button type="button" data-quick-for="liquid-volume" data-value="2">2 mL</button><button type="button" data-quick-for="liquid-volume" data-value="3">3 mL</button><button type="button" data-quick-for="liquid-volume" data-value="5">5 mL</button><button type="button" class="quick-other" data-quick-for="liquid-volume" data-value="other">Andere</button></div></div></section>
+        <div class="calculator-formula"><span>FORMEL</span><p>Konzentration = Stoffmenge ÷ Flüssigkeitsvolumen</p></div>
+        <button class="button button-dark calculator-submit" type="submit">Konzentration berechnen <span>↗</span></button>
+        <p class="calculator-error" id="calculator-error" role="alert" hidden>Bitte gib für beide Felder gültige Werte größer als 0 ein.</p>
+      </form>
+      <section class="calculator-result" id="calculator-result" aria-labelledby="calculator-result-title" aria-live="polite">
+        <div class="eyebrow"><span class="eyebrow-line"></span> ERGEBNIS</div>
+        <h2 id="calculator-result-title">Deine Berechnung.</h2>
+        <p class="calculator-empty" id="calculator-empty">Trage Stoffmenge und Flüssigkeitsvolumen ein, um die Konzentration zu berechnen.</p>
+        <div class="calculator-result-value" id="calculator-output" hidden><strong id="result-mgml"></strong><span id="result-main-unit">mg/mL</span><small id="result-ugml"></small></div>
+        <div class="calculator-result-label" id="result-label-wrap" hidden><span>Produkt oder Notiz</span><b id="result-label"></b></div>
+        <div class="calculator-result-meta" id="calculator-meta" hidden><span>Stoffmenge</span><b id="result-amount"></b><span>Flüssigkeitsvolumen</span><b id="result-volume"></b></div>
+        <div class="calculator-result-actions"><button type="button" id="share-calculation" disabled>Teilen <span>↗</span></button><button type="reset" form="concentration-form">Zurücksetzen</button></div>
+        <p class="calculator-result-note">Das Ergebnis spiegelt nur die eingegebenen Zahlen wider. Prüfe Maßeinheiten und Ausgangswerte unabhängig.</p>
+      </section>
+    </div>
+    <section class="calculator-steps" aria-labelledby="calculator-steps-title">
+      <div class="eyebrow"><span class="eyebrow-line"></span> ABLAUF</div>
+      <h2 id="calculator-steps-title">So funktioniert der Rechner.</h2>
+      <ol>
+        <li><span>1</span><div><h3>Menge im Vial</h3><p>Gib die Stoffmenge und ihre Einheit ein.</p></div></li>
+        <li><span>2</span><div><h3>Flüssigkeitsvolumen</h3><p>Ergänze das Volumen und wähle die passende Einheit.</p></div></li>
+        <li><span>3</span><div><h3>Konzentration ablesen</h3><p>Das Ergebnis wird in mg/mL und µg/mL angezeigt; bei IU-Eingabe separat in IU/mL.</p></div></li>
+      </ol>
+    </section>
+  </main>
+  <div class="calculator-mobile-bar" aria-label="Rechnergebnis">
+    <div><small>KONZENTRATION</small><strong id="mobile-result-value">—</strong><span id="mobile-result-unit">mg/mL</span></div>
+    <a class="button button-dark" href="#calculator-result">Zum Ergebnis <span>↓</span></a>
+  </div>
+  <footer class="site-footer reference-footer">
+  <div class="reference-footer-links">
+    <nav aria-label="Plattform"><a href="./index.html#wissen">Über uns</a><a href="./faq.html">Häufige Fragen</a><a href="./preisliste.html">Preisliste</a><a href="./bestellung.html">Bestellung suchen</a><a href="./sicherheit.html">Sicherheit &amp; Anonymität</a><a href="./rechner.html">Rekonstitutions-Rechner</a></nav>
+    <nav aria-label="Informationen"><a href="./rechtliches.html#impressum">Impressum</a><a href="./rechtliches.html#datenschutz">Datenschutz</a><a href="./rechtliches.html#agb">AGB</a><a href="./rechtliches.html#widerruf">Widerruf</a><a href="./rechtliches.html#versand">Versand &amp; Zahlung</a><a href="./index.html#kontakt">Kontakt</a><a href="./rechtliches.html#cookies">Cookies</a><a href="./rechtliches.html#affiliate">Affiliate program</a><a href="./rechtliches.html#affiliate-bedingungen">Affiliate program Terms and Conditions</a><a href="./rechtliches.html#widerrufsformular">Withdrawal Form</a></nav>
+  </div>
+  <div class="reference-footer-company" id="kontakt">
+    <a class="brand footer-brand" href="./index.html#top" aria-label="Snow Peptides Startseite"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M18 3 32 27H4L18 3Z"/><path d="m18 13 8 14H10l8-14Z"/></svg></span><span>snow<span class="brand-light">peptides</span></span></a>
+    <p>© 2026 Snow Peptides. Alle Rechte vorbehalten.</p>
+    <p class="reference-footer-note">Produkte ausschließlich für qualifizierte Forschungs- und Laborzwecke. Nicht für die Anwendung am Menschen oder Tier bestimmt.</p>
+    <p class="reference-footer-note">Rechtstexte und Kontaktdaten derzeit als Platzhalter.</p>
+    <section class="reference-payments" aria-label="Geplante Zahlungsarten"><div class="reference-payment-logos" aria-label="Zahlungsarten in Planung"><span class="mastercard-mark"><i></i><i></i></span><b class="visa-mark">VISA</b><b class="gpay-mark"><i>G</i> Pay</b><b class="applepay-mark">● Pay</b></div><p>Zahlungsarten sind im Prototyp noch nicht verfügbar.</p></section>
+    <div class="reference-social"><span>Stay connected:</span><div>
+      <a href="#kontakt" aria-label="Mail-Kontakt (Adresse folgt)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a>
+      <a href="#kontakt" aria-label="Telegram (Link folgt)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-3.4 18-6.2-5.1-3.2 3.1.6-5.8L18 6.1 7 12.5l-5-1.7L21 3Z"/><path d="m8.8 13.2 8.7-7.1-6.1 9.8"/></svg></a>
+      <a href="#kontakt" aria-label="Discord (Einladungslink folgt)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 5.5a18 18 0 0 0-4.4-1.4l-.6 1.2a16 16 0 0 0-5 0l-.6-1.2a18 18 0 0 0-4.4 1.4C1.7 9.7 1 13.8 1.4 17.8a18 18 0 0 0 5.5 2.8l1.2-1.9-1.8-.9.5-.4c3.5 1.6 7.2 1.6 10.6 0l.5.4-1.8.9 1.2 1.9a18 18 0 0 0 5.5-2.8c.5-4.6-.8-8.6-3.3-12.3ZM8.8 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.4 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg></a>
+    </div></div>
+  </div>
+  <a class="reference-back-top" href="#top" aria-label="Nach oben">⌃</a>
+</footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <dialog class="login-dialog"><button class="login-close" type="button" aria-label="Schließen">×</button><span class="eyebrow">SNOW PEPTIDES</span><h2>Kundenkonto</h2><p>Der Login und die Kontoverwaltung sind noch nicht verbunden. Es werden keine Kontodaten abgefragt oder gespeichert.</p><div class="checkout-placeholder">[Kundenkonten werden vor dem Livegang eingerichtet]</div><button class="button button-dark login-close" type="button">Schließen</button></dialog>
+  <script src="./app.js"></script>
+  <script src="./calculator.js"></script>
+</body>
+</html>

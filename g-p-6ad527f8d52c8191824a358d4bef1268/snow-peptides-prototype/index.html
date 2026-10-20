@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f8fb" />
+  <meta name="description" content="Snow Peptides – Referenzmaterialien für qualifizierte Forschungs- und Laborzwecke." />
+  <title>Snow Peptides — Klarheit in jeder Sequenz</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Referenzmaterialien für qualifizierte Forschungs- und Laborzwecke <span>·</span> Demo-Shop</div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Snow Peptides Startseite"><span class="brand-mark">✳</span><span>snow<span>peptides</span></span></a>
+    <nav class="nav" id="main-nav" aria-label="Hauptnavigation"><a href="#catalog">Sortiment</a><a href="#quality">Qualitätsanspruch</a><a href="#faq">FAQ</a></nav>
+    <div class="actions">
+      <button class="icon-button search-toggle" aria-label="Suche öffnen" title="Suche"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-button wishlist-open" aria-label="Wunschliste öffnen"><svg viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.1-8.8 11-8.8 11s-8.8-5.9-8.8-11A4.8 4.8 0 0 1 12 6.5a4.8 4.8 0 0 1 8.8 2.3Z"/></svg><span class="count wishlist-count">0</span></button>
+      <button class="icon-button cart-open" aria-label="Warenkorb öffnen"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/><path d="M2.5 3.5h2l2.2 11.2a2 2 0 0 0 2 1.6h9.4a2 2 0 0 0 1.9-1.5L22 8H5.2"/></svg><span class="count cart-count">0</span></button>
+      <button class="login-open text-button">Login</button><button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+  <div class="searchbar" hidden><label for="site-search">Produkte suchen</label><input id="site-search" type="search" placeholder="Name oder Studiengebiet" /><button class="search-submit">Suchen</button></div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">✳</span><span>snow<span>peptides</span></span></a>
+      <div class="footer-links"><a href="#catalog">Sortiment</a><a href="#faq">FAQ</a><a href="#legal">Rechtliches</a></div>
+      <div class="footer-contact"><h2>Kontakt</h2><p><span aria-hidden="true">☎</span><b>Telefon</b><em>[Telefonnummer ergänzen]</em></p><p><span aria-hidden="true">✉</span><b>E-Mail</b><em>[Kontaktadresse ergänzen]</em></p><p><span aria-hidden="true">◉</span><b>Discord</b><em>[Einladungslink ergänzen]</em></p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Snow Peptides · Demo-Prototyp</span><span>Alle Produkt- und Chargenangaben sind Platzhalter.</span><p>Referenzmaterialien ausschließlich für qualifizierte Forschungs- und Laborzwecke. Nicht zur Anwendung am Menschen oder Tier.</p></div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <div class="scrim" hidden></div>
+  <aside class="drawer" aria-label="Warenkorb" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow">DEINE AUSWAHL</span><h2>Warenkorb <span class="drawer-count"></span></h2></div><button class="close-drawer" aria-label="Warenkorb schließen">×</button></div><div class="drawer-body"></div><div class="drawer-foot"><div class="total-row"><span>Demo-Zwischensumme</span><strong class="cart-total">€0</strong></div><p>Demo-Warenkorb. Checkout und Zahlung sind nicht angebunden.</p><button class="button button-dark checkout-open">Checkout-Vorschau ansehen</button></div></aside>
+  <dialog class="wishlist-dialog"><button class="dialog-close" aria-label="Schließen">×</button><span class="eyebrow">MERKLISTE</span><h2>Wunschliste <small class="wishlist-dialog-count"></small></h2><div class="wishlist-body"></div></dialog>
+  <dialog class="message-dialog"><button class="dialog-close" aria-label="Schließen">×</button><div class="message-content"></div></dialog>
+</body>
+</html>

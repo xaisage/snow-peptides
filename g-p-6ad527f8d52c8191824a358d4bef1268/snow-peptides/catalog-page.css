@@ -1,0 +1,4 @@
+.catalog{padding-top:94px;min-height:calc(100vh - 106px)}
+.catalog .section-heading{margin-bottom:48px}
+.catalog .section-heading h2{font-size:52px}
+@media(max-width:650px){.catalog{padding-top:66px;min-height:0}.catalog .section-heading h2{font-size:42px}.catalog .section-heading{margin-bottom:34px}}
